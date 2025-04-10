@@ -1,0 +1,26 @@
+*----------------------------------------------------------------------
+* This file corresponds to version 17.4.1 of taxon.for
+*----------------------------------------------------------------------
+* Maximum number of points allowed in an orbit
+      INTEGER nn
+      PARAMETER (nn=8192)
+* Maximum number of lines per spectrum
+      INTEGER maxlin
+      PARAMETER (maxlin=12)
+* Take the Fourier spectra of x + i v (=1) or of x + 0i (=2)
+      INTEGER metodo
+      PARAMETER (metodo=1)
+* Fraction of the max amplitude to keep a line
+      DOUBLE PRECISION frac2,frac3
+      PARAMETER (frac2=0.02d0,frac3=0.1d0)
+* Fraction of a Fourier slot to compute equality of frequencies
+      DOUBLE PRECISION epsf2,epsf3,epsmax
+      PARAMETER (epsf2=0.1d0,epsf3=0.1d0,epsmax=2d-4)
+* Maximum integer for searching resonances
+      INTEGER ifin2,ifin3
+      PARAMETER (ifin2=14,ifin3=7)
+* Maximum integers for searching linear independence
+      INTEGER ifon
+      PARAMETER (ifon=10)
+      INTEGER ifun
+      PARAMETER (ifun=35)
